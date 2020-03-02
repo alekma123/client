@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <base href="/"/>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+
+    <style type="text/css">
+        .formLogIn {
+        width:30%;
+		/*height:35%;*/
+		margin:50px auto;
+		box-shadow: -5px -5px 5px #888;
+        }
+		form{
+		background-color:white;
+		}
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	
+</head>
+<body>
+<div style="background-color:#4265B5; height:100%;width:100%; position:absolute;">
+<div class="formLogIn">
+<form action="#" th:action="@{/profile}" th:object="${user}" method="post"  class="text-center border border-normal p-5">
+    <label for="userLogin">Логин:</label>
+    <input type="text"  id="userLogin" th:field="*{name}"  class="form-control mb-4" placeholder="logIn">
+
+    <label for="userPassword">Пароль:</label>
+    <input type="password" id="userPassword" th:field="*{password}" class="form-control mb-4" placeholder="password">
+    <input type="submit" value="Вход" class="btn btn-info btn-block my-4">
+</form>
+</div>
+</div>
+</body>
+</html>
