@@ -20,9 +20,12 @@
 				<img src=".\img\user.png" align="left" width="30px" /> 
 			</a>	
 		</li>
-			<li class="na active">
+		<li class="nav-item active">
 			<a class="nav-link">UserName</a>
-			<li>
+		</li>
+		<li class="nav-item active">
+			<a class="nav-link">(Первая линия тех.поддержки)</a>
+		</li>
 	</ul>	
 	</div>
 	<div>
@@ -60,7 +63,7 @@
 					<table class="table table-light table-hover" style="margin-top:10px;">
 						<thead>
 							<tr>
-								<th style="color:grean;">Заявки</th>
+								<th style="color:grean;">Заявки (Тикеты)</th>
 							</tr>
 						</thead>	
 							<tr>
@@ -73,11 +76,36 @@
 				</div>
 			</div>
 		</div>
-		<div style="background-color:#e3f2fd; "class="col-8 border border-primary">		
-				<div class="col-12" style="margin-top:10px;">
-					<label>Номер заявки</label>
-					<input class="form-control" id="disabledInput" type="text" placeholder="Текст самомй заявки от клиента" disabled>	
-				</div>			
+		<div style="background-color:#e3f2fd; "class="col-8 border border-primary" >		
+				<div class="col-10" style="margin-top:10px;">
+					<label> <H6>№ Заявка(тикета) в тех. поддержку: </H6></label>
+					<input class="form-control" style="background-color:white;" type="text" placeholder="Заявка от самого клиента...." readonly>	
+				</div>
+
+				<div class="row" style="margin-top:10px;">
+					<div class="col-10">
+					<label>Реквизиты</label>
+					<ul class="list-group">
+						<li class="list-group-item">№ Договора:</li>
+						<li class="list-group-item">ФИО абонента:</li>
+						<li class="list-group-item">Дата:</li>
+						<li class="list-group-item">Адрес:</li>
+						<li class="list-group-item">Телефон:</li>
+						<li class="list-group-item">Тикет завёл:</li>
+					</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-top:10px; margin-bottom:10px;">
+					<div class="col-10">
+					<label>Свойства</label>
+						<ul class="list-group">
+							<li class="list-group-item">Узел доступа:</li>
+							<li class="list-group-item">IP-адрес РЭС:</li>
+							<li class="list-group-item">Рабочая группа:</li>
+						</ul>
+					</div>
+				</div>		
 		</div>
 	</div>
 <div class="row">	
